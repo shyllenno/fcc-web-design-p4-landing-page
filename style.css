@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  #fbefdf;
+    /*     #fbefdf */
+    /*     #4b1f0e */
+    color: #45230f;
+
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-img {
+    width: 360px;
+    margin: 20px 0 0 50px;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*   align-items: center; */
+    padding-inline-start: 0;
+    margin-block: 0;
+
+}
+nav > ul > li{
+    display: block;
+
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    font-size: 24px;
+    padding: 0 20px;
+    font-style: italic;
+    border-bottom-style: double;
+
+}
+
+a:hover{
+    background-color: #4b1f0e;
+    color: #fbefdf;
+}
+
+a:active{
+    /*     background-color: #794028; */
+    background-color: #be7656;
+}
+
+.landing-page-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+#making-coffee-img{
+    width: 400px;
+}
+
+.making-coffee-img-div{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    text-align: center;
+}
+
+.features-div{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    text-align: center;
+    padding:  0 20px;
+}
+
+.how_it_works-div{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.how_it_works_after {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.offers-div{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.offers-box-div{
+    display: flex;
+    justify-content: center; 
+    padding: 20px 0;
+}
+
+.offer-box{
+    border: 2px solid black;
+    width: 400px;  
+    min-width: 200px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+.offer-content{
+    height: 75%;
+/*     padding: 10px; */
+}
+.offer-button{
+    height: 10%;
+/*     margin-top: 20px; */
+}
+.button{
+    margin: 20px 0;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: 16px
+}
+button:hover{
+    background-color: #4b1f0e;
+    color: #fbefdf;
+}
+
+button:active{
+    background-color: #be7656;
+}
+
+h1{
+    font-size: 40px;
+    text-decoration: underline;
+}
+h2{
+    margin-top: 30px;
+}
+h3{
+    font-size: 24px;
+    padding: 15px 0;
+}
+p{
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.video-container{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    text-align: center;
+}
+
+form{
+    padding: 30px 0 100px 0;
+}
+
+input{
+    width: 350px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+/*     background-color: #efc3a4; */
+    background-color: #efc3a4;
+    border-radius: 20px;
+    
+}
+form > button{
+    width: 75px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 869px){
+    header{
+        flex-wrap: wrap;
+        display: block;
+        text-align: center;
+    }
+
+    #header-img {
+        /*         width: 360px; */
+        margin: 20px 0;
+    }
+
+    nav > ul{
+        display: block;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        /*   align-items: center; */
+        padding-inline-start: 0;
+        margin-block: 0;
+
+    }
+    a{
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .landing-page-wrapper{
+        display: block;
+
+    }
+    .video-container, .how_it_works-div, .making-coffee-img-div, .features-div{
+        margin: 50px 0;
+        text-align: center;
+    }
+
+
+    .offers-box-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+.offer-box{
+    
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+    
+    form{
+        display: block;
+    }
+    
+    input{
+    width: auto;
+}
+    
+
+}
