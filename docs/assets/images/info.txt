@@ -1,1 +1,0 @@
-Creates the folder docs/assets/images
